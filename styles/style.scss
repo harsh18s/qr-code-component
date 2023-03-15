@@ -23,29 +23,33 @@ $Dark-blue: hsl(218, 44%, 22%);
 body {
   background-color: $Light-gray;
   font-size: 15px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
+// .container {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translateX(-50%) translateY(-50%);
+// }
 .content {
   padding: 10px;
   justify-content: center;
   h2 {
-    color: $Dark-blue;
+    color: $Grayish-blue;
     font-weight: 700;
     padding: 0 0 16px 0;
   }
 
   p {
-    color: $Grayish-blue;
+    // color: $Grayish-blue;
     font-weight: 400;
   }
 }
 img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 5px;
 }
 .card {
@@ -68,8 +72,8 @@ img {
   padding: 1%;
 }
 
-@media (min-width: 375px) {
-  .container {
-    width: 300px;
-  }
-}
+// @media (min-width: 375px) {
+//   .container {
+//     width: 300px;
+//   }
+// }
